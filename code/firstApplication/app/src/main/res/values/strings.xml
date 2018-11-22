@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tolga's apps</string>
+    <string name="app_name_days_left">Days Left</string>
+    <string name="app_name_sqlite_test">SQLite Test</string>
+    <string name="send_button">Send</string>
+    <string name="days_left_button">Days Left</string>
+    <string name="pwd_keeper_button">Passwords</string>
+    <string name="title_activity_password">PasswordActivity</string>
+
+    <string name="enter_name">Country Name</string>
+    <string name="add_record">Add Record</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="empty_list_text">No records found</string>
+    <string name="enter_desc">Currency</string>
+    <string name="enter_title">Country</string>
+    <string name="sql_lite_test">SQLLiteTEST</string>
+
+    <string name="weight_text">Weight</string>
+    <string name="weight_tracker_title">Weight Tracker</string>
+</resources>
