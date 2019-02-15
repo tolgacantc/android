@@ -36,7 +36,7 @@ class DaysLeftTest {
     fun less_than_one_year_test() {
         val today = Date()
         val nextYearStr = dateToStr(advanceDate(today, Calendar.DATE, 360))
-        var daysLeft = DaysLeft(todayStr, nextYearStr)
+        var daysLeft = DaysLeft(dateToStr(today), nextYearStr)
         assertEquals(11, daysLeft.diffMonth)
         assertEquals(0, daysLeft.diffYear)
         assertEquals(360, daysLeft.daysLeft)
@@ -44,21 +44,21 @@ class DaysLeftTest {
     }
 
     @Test
-    fun thirty_days_test() {
+    fun twenty_days_test() {
         val today = Date()
-        val nextYearStr = dateToStr(advanceDate(today, Calendar.DATE, 30))
-        var daysLeft = DaysLeft(todayStr, nextYearStr)
+        val nextYearStr = dateToStr(advanceDate(today, Calendar.DATE, 20))
+        var daysLeft = DaysLeft(dateToStr(today), nextYearStr)
         assertEquals(0, daysLeft.diffMonth)
         assertEquals(0, daysLeft.diffYear)
-        assertEquals(30, daysLeft.daysLeft)
-        assertEquals(30, daysLeft.daysLeftInMonth)
+        assertEquals(20, daysLeft.daysLeft)
+        assertEquals(20, daysLeft.daysLeftInMonth)
     }
 
     @Test
     fun one_year_one_month_one_day_test() {
         val today = Date()
         val targetDate = dateToStr(advanceDate(advanceDate(advanceDate(today, Calendar.YEAR, 1), Calendar.MONTH, 1), Calendar.DATE, 1))
-        var daysLeft = DaysLeft(todayStr, targetDate)
+        var daysLeft = DaysLeft(dateToStr(today), targetDate)
         assertEquals(1, daysLeft.diffMonth)
         assertEquals(1, daysLeft.diffYear)
         assertEquals(396, daysLeft.daysLeft)
