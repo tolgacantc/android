@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">User Input</string>
+    <string name="quantity_tv">Quantity</string>
+    <string name="price_tv">Price</string>
+    <string name="quantity_value_default">2</string>
+    <string name="price_value_default">$10</string>
+    <string name="order_button">Order</string>
+    <string name="increment_button">+</string>
+    <string name="decrement_button">-</string>
+</resources>
