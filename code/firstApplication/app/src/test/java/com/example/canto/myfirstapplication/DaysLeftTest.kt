@@ -40,7 +40,7 @@ class DaysLeftTest {
         assertEquals(11, daysLeft.diffMonth)
         assertEquals(0, daysLeft.diffYear)
         assertEquals(360, daysLeft.daysLeft)
-        assertEquals(26, daysLeft.daysLeftInMonth)
+        assertEquals(25, daysLeft.daysLeftInMonth)
     }
 
     @Test
@@ -61,7 +61,7 @@ class DaysLeftTest {
         var daysLeft = DaysLeft(dateToStr(today), targetDate)
         assertEquals(1, daysLeft.diffMonth)
         assertEquals(1, daysLeft.diffYear)
-        assertEquals(396, daysLeft.daysLeft)
+        assertEquals(397, daysLeft.daysLeft)
         assertEquals(1, daysLeft.daysLeftInMonth)
     }
 

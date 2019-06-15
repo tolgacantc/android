@@ -14,14 +14,14 @@ public class ColorsActivity extends AppCompatActivity {
         setContentView(R.layout.word_list);
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("red", "kirmizi"));
-        words.add(new Word("mustard yellow", "sari"));
-        words.add(new Word("dusty yellow", "sari"));
-        words.add(new Word("green", "yesil"));
-        words.add(new Word("brown", "kahve"));
-        words.add(new Word("gray", "gri"));
-        words.add(new Word("black", "siyah"));
-        words.add(new Word("white", "beyaz"));
+        words.add(new Word("red", "kirmizi", R.drawable.color_red));
+        words.add(new Word("mustard yellow", "sari", R.drawable.color_dusty_yellow));
+        words.add(new Word("dusty yellow", "sari", R.drawable.color_dusty_yellow));
+        words.add(new Word("green", "yesil", R.drawable.color_green));
+        words.add(new Word("brown", "kahve", R.drawable.color_brown));
+        words.add(new Word("gray", "gri", R.drawable.color_gray));
+        words.add(new Word("black", "siyah", R.drawable.color_black));
+        words.add(new Word("white", "beyaz", R.drawable.color_white));
 
         WordAdapter wordAdapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.list);

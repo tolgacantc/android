@@ -8,6 +8,8 @@ public class Word {
     /** Miwok translation for the word */
     private String mTranslation;
 
+    private int mImageResourceId;
+
     /**
      * Create a new Word object.
      *
@@ -18,6 +20,13 @@ public class Word {
     public Word(String defaultTranslation, String translation) {
         mDefaultTranslation = defaultTranslation;
         mTranslation = translation;
+        mImageResourceId = -1;
+    }
+
+    public Word(String defaultTranslation, String translation, int imageId) {
+        mDefaultTranslation = defaultTranslation;
+        mTranslation = translation;
+        mImageResourceId = imageId;
     }
 
     /**
@@ -33,4 +42,8 @@ public class Word {
     public String getTranslation() {
         return mTranslation;
     }
+
+    public int getImageResourceId() { return mImageResourceId; }
+
+    public boolean hasImage() { return mImageResourceId > 0; }
 }
